@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 // typing text animation script
 var typed = new Typed(".typing", {
-    strings: ["Diseño web", "Ingenieria en sistemas"],
+    strings: ["Diseño web", "Ing. en sistemas"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true

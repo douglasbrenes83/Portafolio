@@ -1,34 +1,23 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if(this.scrollY >20){
-            $('.navbar').addClass("sticky");
-        }else{
-            $('.navbar').removeClass("sticky");
-        }
-    });
-    // menu/navbar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    });
 
-// typing text animation script
-var typed = new Typed(".typing", {
-    strings: ["Diseño web", "Ingenieria en sistemas"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Aquí va tu código JavaScript que interactúa con el DOM
+    const miElemento = document.getElementById("miElemento");
+    if (miElemento) {
+        miElemento.addEventListener("click", function() {
+            console.log("Elemento clickeado");
+        });
+    }
 });
 
-var typed = new Typed(".typing-2", {
-    strings: ["Diseño web", "Ing. en sistemas"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
-
+// Función para agregar la clase 'visible' cuando se hace scroll
+window.addEventListener('scroll', function() {
+    var timelineItems = document.querySelectorAll('.timeline-item');
+  
+    timelineItems.forEach(function(item) {
+      var rect = item.getBoundingClientRect();
+      if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+        item.classList.add('visible');
+      }
     });
-
-   
-   
-
+  });

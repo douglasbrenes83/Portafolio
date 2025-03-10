@@ -12,24 +12,43 @@
 </head>
 <body>
     <header>
-        <nav>  
-             <span class="logo">DB</span>
-            <div class="logo">             
-                <h1>Douglas Brenes</h1>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <span class="navbar-brand">DB</span>
+                <div class="navbar-brand">
+                    <h1>Douglas Brenes</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Certificaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencia-laboral">Experiencia Laboral</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Certificaciones</a></li>
-                <li><a href="#experiencia-laboral">Experiencia Laboral</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
         </nav>
     </header>
-
+    
     <section id="about">
         <div class="container">
-            <img src="img/20211130_151612.jpg" alt="Douglas Brenes" class="profile-img">
-            <h2>Ingeniero en Sistemas</h2>
+            <div class="containerImg">
+                <div class="circle"></div>
+                <div class="inner-circle">
+                    <img src="img/20211130_151612.jpg" alt="Imagen Central" class="profile-img">
+                </div>
+            </div>
             <h3>SQL, HTML, AWS, Django</h3>
             <p>Soy Ingeniero en Sistemas con una sólida experiencia en el diseño de aplicaciones web y desarrollo de soluciones tecnológicas utilizando herramientas como SQL Server, Transact-SQL y servicios de AWS.
 
@@ -37,7 +56,11 @@
                 
                 Mi pasión por la tecnología, junto con mi habilidad para abordar problemas complejos y encontrar soluciones innovadoras, me ha permitido colaborar exitosamente con equipos multidisciplinarios y contribuir al éxito de los proyectos en los que he estado involucrado. Estoy siempre en la búsqueda de nuevos desafíos que me permitan seguir creciendo y aportando valor a los equipos con los que colaboro.
             </p>
+            <a href="assets/cv.pdf" download="Douglas_CV.pdf" class="btn btn-primary">
+                <i class="fas fa-download"></i> Descargar CV
+            </a>
         </div>
+       
     </section>
 
     <section id="projects">
@@ -50,7 +73,7 @@
                     <div class="certifications-image">
                         <img src="img/certf-01.jpg" alt="Mis Certificaciones">
                     </div>
-                    <p>Descripción breve del proyecto 1.</p>
+                    <p></p>
                 </div>
                 <!-- Proyecto 2 -->
                 <div class="project-card">
@@ -58,7 +81,7 @@
                     <div class="certifications-image">
                         <img src="img/certf-02.jpg" alt="Mis Certificaciones">
                     </div>
-                    <p>Descripción breve del proyecto 2.</p>
+                    <p></p>
                 </div>
                 <!-- Proyecto 3 -->
                 <div class="project-card">
@@ -66,7 +89,7 @@
                     <div class="certifications-image">
                         <img src="img/certf-03.jpg" alt="Mis Certificaciones">
                     </div>
-                    <p>Descripción breve del proyecto 3.</p>
+                    <p></p>
                 </div>
                 
                 <!-- Proyecto 3 -->

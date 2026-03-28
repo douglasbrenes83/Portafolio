@@ -3,266 +3,408 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de Douglas Brenes - Ingeniero en Sistemas">
-    <title>Portafolio Douglas Brenes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Incluyendo Font Awesome para los íconos -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta
+        name="description"
+        content="Douglas Brenes | Software Engineer enfocado en backend, sistemas empresariales, despliegue t&eacute;cnico, soporte, automatizaci&oacute;n e integraci&oacute;n para PYMES."
+    >
+    <meta
+        property="og:title"
+        content="Douglas Brenes | Software Engineer | Backend &amp; Business Systems"
+    >
+    <meta
+        property="og:description"
+        content="Portafolio de un ingeniero de software orientado a backend, sistemas empresariales, despliegue en Linux, soporte t&eacute;cnico, automatizaci&oacute;n e integraci&oacute;n."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:locale" content="es_ES">
+    <meta name="theme-color" content="#0f172a">
+    <title>Douglas Brenes | Software Engineer | Backend &amp; Business Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container-fluid">
-                <span class="navbar-brand">DB</span>
-                <div class="navbar-brand">
-                    <h1>Douglas Brenes</h1>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Certificaciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experiencia-laboral">Experiencia Laboral</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <div class="container">
-            <div class="containerImg">
-                <div class="circle"></div>
-                <div class="inner-circle">
-                    <img src="img/20211130_151612.jpg" alt="Imagen Central" class="profile-img">
-                </div>
-            </div>
-            <h3>SQL, HTML, AWS, Django</h3>
-            <p>Soy Ingeniero en Sistemas con una sólida experiencia en el diseño de aplicaciones web y desarrollo de soluciones tecnológicas utilizando herramientas como SQL Server, Transact-SQL y servicios de AWS.
+    <a class="skip-link" href="#main-content">Ir al contenido principal</a>
 
-                Tengo un dominio sobre la gestión y configuración de servicios en la nube con AWS, lo que me permite ofrecer soluciones robustas y seguras en la nube.
-                
-                Mi pasión por la tecnología, junto con mi habilidad para abordar problemas complejos y encontrar soluciones innovadoras, me ha permitido colaborar exitosamente con equipos multidisciplinarios y contribuir al éxito de los proyectos en los que he estado involucrado. Estoy siempre en la búsqueda de nuevos desafíos que me permitan seguir creciendo y aportando valor a los equipos con los que colaboro.
-            </p>
-            <a href="img/Douglas_CV.pdf" download="Douglas_CV.pdf" class="btn btn-primary">
-                <i class="fas fa-download"></i> Descargar CV
+    <header class="site-header" id="top">
+        <div class="container nav-shell">
+            <a class="brand" href="#top" aria-label="Inicio de Douglas Brenes">
+                <span class="brand-mark">DB</span>
+                <span class="brand-copy">
+                    <strong>Douglas Brenes</strong>
+                    <small>Backend, sistemas e infraestructura</small>
+                </span>
             </a>
+
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="site-nav"
+                aria-label="Abrir navegaci&oacute;n"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Navegaci&oacute;n principal">
+                <a href="#value">Valor</a>
+                <a href="#experience">Experiencia</a>
+                <a href="#skills">Capacidades</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#infrastructure">Infraestructura</a>
+                <a href="#contact">Contacto</a>
+            </nav>
         </div>
-       
-    </section>
+    </header>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Mis Certificaciones</h2>
-            <div class="projects-grid">
-                <!-- Proyecto 1 -->
-                <div class="project-card">
-                    <h3>Diseño de Páginas Web</h3>
-                    <div class="certifications-image">
-                        <img src="img/certf-01.jpg" alt="Mis Certificaciones">
+    <main id="main-content">
+        <section class="hero section-anchor" id="hero">
+            <div class="hero-backdrop" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+
+            <div class="container hero-layout">
+                <div class="hero-copy reveal">
+                    <span class="eyebrow">Software e infraestructura para operaciones reales</span>
+                    <h1 class="hero-title">Douglas Brenes</h1>
+                    <div class="hero-role-stack">
+                        <p class="hero-role-primary">Software Engineer</p>
+                        <p class="hero-role-secondary">Backend-focused | Business Systems Builder | Automation &amp; Infrastructure minded</p>
                     </div>
-                    <p></p>
+                    <p class="hero-subtitle">
+                        Construyo sistemas empresariales, soluciones backend e implementaciones t&eacute;cnicas
+                        para equipos que necesitan estabilidad, integraci&oacute;n y mejora operativa.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">Ver proyectos</a>
+                        <a class="button button-secondary" href="#contact">Hablar de implementaci&oacute;n</a>
+                    </div>
+
+                    <div class="hero-proof">
+                        <div class="proof-chip">Backend y bases de datos</div>
+                        <div class="proof-chip">Linux, despliegue y soporte</div>
+                        <div class="proof-chip">Automatizaci&oacute;n e integraci&oacute;n</div>
+                    </div>
                 </div>
-                <!-- Proyecto 2 -->
-                <div class="project-card">
-                    <h3>SQL Server: Transact-SQL 2019</h3>
-                    <div class="certifications-image">
-                        <img src="img/certf-02.jpg" alt="Mis Certificaciones">
+
+                <aside class="hero-stage reveal">
+                    <div class="hero-panel hero-panel-main">
+                        <div class="hero-panel-media">
+                            <img src="profile.jpg" alt="Retrato de Douglas Brenes">
+                        </div>
+                        <div class="hero-panel-copy">
+                            <span class="panel-label">Perfil profesional</span>
+                            <h2>Backend, Linux y soporte t&eacute;cnico aplicados a sistemas que deben funcionar de verdad.</h2>
+                            <p>
+                                Soy Ingeniero de Software enfocado en soluciones empresariales para PYMES.
+                                Combino backend, bases de datos, APIs, despliegue y configuraci&oacute;n en Linux
+                                con un enfoque pr&aacute;ctico en operaci&oacute;n, continuidad y resoluci&oacute;n de problemas.
+                            </p>
+                        </div>
                     </div>
-                    <p></p>
+
+                    <div class="hero-mini-grid">
+                        <div class="hero-panel hero-panel-mini hero-panel-top">
+                            <strong>Implementaci&oacute;n y despliegue</strong>
+                            <span>Experiencia pr&aacute;ctica con Ubuntu, servidores, configuraci&oacute;n t&eacute;cnica, redes y preparaci&oacute;n de entornos de trabajo.</span>
+                        </div>
+
+                        <div class="hero-panel hero-panel-mini hero-panel-bottom">
+                            <strong>Soporte e integraci&oacute;n</strong>
+                            <span>Perfil t&eacute;cnico adaptable a CRM, automatizaci&oacute;n e integraci&oacute;n entre herramientas para necesidades reales de negocio.</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="value-proposition section-anchor section-block" id="value">
+            <div class="container value-layout">
+                <div class="section-intro reveal">
+                    <span class="section-label">Propuesta de valor</span>
+                    <h2>Construyo sistemas que resuelven problemas reales de negocio y puedo aportar valor en implementaci&oacute;n, soporte, despliegue e integraci&oacute;n.</h2>
                 </div>
-                <!-- Proyecto 3 -->
-                <div class="project-card">
-                    <h3>Redes de Computadoras Introductorio</h3>
-                    <div class="certifications-image">
-                        <img src="img/certf-03.jpg" alt="Mis Certificaciones">
-                    </div>
-                    <p></p>
-                </div>
-                
-                <!-- Proyecto 3 -->
-                <div class="project-card">
-                    <h3>IT Specialist - HTML and CSS</h3>
-                    <div class="certifications-image">
-                        <img src="img/Especialista IT.PNG" alt="Mis Certificaciones">
-                        <a href="https://www.credly.com/badges/77aa506d-c191-42ea-a0e0-dc84a83ae288/linked_in?t=scu4uv" target="_blank">Haz clic aquí</a>    
-                    </div>
-                
+
+                <div class="value-grid">
+                    <article class="value-card reveal">
+                        <h3>Sistemas empresariales con sentido operativo</h3>
+                        <p>He trabajado en proyectos reales y acad&eacute;micos relacionados con gesti&oacute;n de pacientes, ex&aacute;menes, pedidos, cotizaciones, proveedores y procesos internos.</p>
+                    </article>
+                    <article class="value-card reveal">
+                        <h3>Implementaci&oacute;n con base t&eacute;cnica s&oacute;lida</h3>
+                        <p>Mi experiencia pr&aacute;ctica en backend, bases de datos, arquitectura por capas, APIs y Linux me permite aportar en despliegue, configuraci&oacute;n y continuidad operativa.</p>
+                    </article>
+                    <article class="value-card reveal">
+                        <h3>Tecnolog&iacute;a conectada con negocio</h3>
+                        <p>Mi enfoque combina software, automatizaci&oacute;n y mejora operativa para construir soluciones &uacute;tiles, sostenibles y alineadas con las necesidades de una empresa.</p>
+                    </article>
                 </div>
             </div>
+        </section>
+
+        <section class="experience-highlights section-anchor section-block section-muted" id="experience">
+            <div class="container experience-layout">
+                <div class="section-intro reveal">
+                    <span class="section-label">Experiencia aplicada</span>
+                    <h2>Experiencia real en sistemas empresariales, despliegue t&eacute;cnico, soporte e integraci&oacute;n entre componentes.</h2>
+                </div>
+
+                <div class="experience-grid">
+                    <article class="experience-card reveal">
+                        <h3>Sistemas empresariales y procesos internos</h3>
+                        <p>He desarrollado soluciones relacionadas con gesti&oacute;n de pacientes, ex&aacute;menes, resultados, pedidos, cotizaciones y proveedores, siempre con foco en orden operativo y continuidad.</p>
+                        <div class="experience-tags">
+                            <span>Pacientes y resultados</span>
+                            <span>Pedidos y cotizaciones</span>
+                            <span>Procesos de negocio</span>
+                        </div>
+                    </article>
+
+                    <article class="experience-card reveal">
+                        <h3>Implementaci&oacute;n, Linux y configuraci&oacute;n t&eacute;cnica</h3>
+                        <p>Experiencia pr&aacute;ctica con Ubuntu, servidores, redes, despliegue y configuraci&oacute;n en entornos donde el software debe quedar operativo y conectado correctamente.</p>
+                        <div class="experience-tags">
+                            <span>Ubuntu y servidores</span>
+                            <span>Redes y conectividad</span>
+                            <span>Despliegue t&eacute;cnico</span>
+                        </div>
+                    </article>
+
+                    <article class="experience-card reveal">
+                        <h3>Soporte, APIs e integraci&oacute;n operativa</h3>
+                        <p>Trabajo con backend, bases de datos, APIs, conexi&oacute;n entre sistemas y troubleshooting para resolver incidencias y mantener operaciones t&eacute;cnicas funcionando de forma confiable.</p>
+                        <div class="experience-tags">
+                            <span>APIs e integraci&oacute;n</span>
+                            <span>Soporte t&eacute;cnico</span>
+                            <span>Resoluci&oacute;n de problemas</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section-anchor section-block" id="skills">
+            <div class="container">
+                <div class="section-intro section-intro-centered reveal">
+                    <span class="section-label">Capacidades</span>
+                    <h2>Capacidades t&eacute;cnicas alineadas con backend, implementaci&oacute;n, soporte, automatizaci&oacute;n e infraestructura aplicada al negocio.</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <div class="skill-icon">BE</div>
+                        <h3>Backend y arquitectura por capas</h3>
+                        <p>Desarrollo de l&oacute;gica de negocio, organizaci&oacute;n t&eacute;cnica de aplicaciones y estructuras pensadas para sistemas empresariales que necesitan crecer con orden.</p>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon">DB</div>
+                        <h3>Bases de datos y APIs</h3>
+                        <p>Trabajo pr&aacute;ctico con estructuras de datos, persistencia de informaci&oacute;n y conexi&oacute;n entre componentes mediante APIs para soportar integraciones y flujos operativos.</p>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon">LX</div>
+                        <h3>Linux, despliegue y configuraci&oacute;n</h3>
+                        <p>Experiencia pr&aacute;ctica en entornos Linux, despliegue, configuraci&oacute;n t&eacute;cnica y preparaci&oacute;n de soluciones para su puesta en operaci&oacute;n.</p>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon">TS</div>
+                        <h3>Soporte t&eacute;cnico y troubleshooting</h3>
+                        <p>Resoluci&oacute;n de problemas, soporte avanzado, redes y conexi&oacute;n entre sistemas en escenarios donde la operaci&oacute;n necesita continuidad y respuesta t&eacute;cnica.</p>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon">AU</div>
+                        <h3>Automatizaci&oacute;n e integraci&oacute;n</h3>
+                        <p>Enfoque pr&aacute;ctico para automatizar procesos, conectar herramientas y adaptarme a plataformas de CRM, automatizaci&oacute;n e integraci&oacute;n seg&uacute;n la necesidad del negocio.</p>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon">BS</div>
+                        <h3>Sistemas empresariales</h3>
+                        <p>Experiencia construyendo soluciones orientadas a operaci&oacute;n cl&iacute;nica, pedidos, cotizaciones, proveedores y flujos internos que requieren claridad funcional y estabilidad.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section-anchor section-block section-muted" id="projects">
+            <div class="container">
+                <div class="section-intro reveal">
+                    <span class="section-label">Proyectos</span>
+                    <h2>Casos que reflejan c&oacute;mo conecto backend, operaci&oacute;n empresarial, automatizaci&oacute;n e implementaci&oacute;n t&eacute;cnica para resolver necesidades reales.</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card project-card-featured reveal">
+                        <div class="project-media">
+                            <div class="project-visual project-visual-lims">
+                                <span class="project-visual-label">LIMS</span>
+                                <strong>Gesti&oacute;n cl&iacute;nica escalable</strong>
+                                <p>Pacientes, ex&aacute;menes, resultados y una base backend preparada para crecer.</p>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-kicker">Caso de sistema empresarial</span>
+                            <h3>Sistema de laboratorio cl&iacute;nico (LIMS)</h3>
+                            <p>
+                                Proyecto desarrollado con enfoque en gesti&oacute;n de pacientes, ex&aacute;menes y resultados,
+                                pensado para ordenar la operaci&oacute;n cl&iacute;nica y sostener escalabilidad desde una base
+                                t&eacute;cnica m&aacute;s estructurada.
+                            </p>
+                            <ul class="project-meta">
+                                <li><strong>Problema</strong><span>Centralizar informaci&oacute;n cl&iacute;nica y dar trazabilidad a procesos y resultados.</span></li>
+                                <li><strong>Aporte t&eacute;cnico</strong><span>Backend, bases de datos, arquitectura por capas y APIs para sostener una estructura m&aacute;s ordenada.</span></li>
+                                <li><strong>Valor de negocio</strong><span>Mejor organizaci&oacute;n de flujo operativo en un entorno donde la informaci&oacute;n debe mantenerse clara y confiable.</span></li>
+                            </ul>
+                            <a class="project-link" href="#contact">Hablar de este caso</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-media">
+                            <div class="project-visual project-visual-ai">
+                                <span class="project-visual-label">IA</span>
+                                <strong>Pedidos, cotizaciones y proveedores</strong>
+                                <p>Automatizaci&oacute;n aplicada a decisiones y seguimiento operativo.</p>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-kicker">Automatizaci&oacute;n aplicada</span>
+                            <h3>Sistema de pedidos con IA</h3>
+                            <p>
+                                Proyecto orientado a optimizar la gesti&oacute;n de cotizaciones y proveedores,
+                                ayudando a ordenar pedidos y apoyar decisiones operativas con una l&oacute;gica
+                                t&eacute;cnica m&aacute;s inteligente.
+                            </p>
+                            <ul class="project-meta">
+                                <li><strong>Problema</strong><span>Desorden en el manejo de cotizaciones, proveedores y flujo de pedidos.</span></li>
+                                <li><strong>Aporte t&eacute;cnico</strong><span>Backend, bases de datos y l&oacute;gica de automatizaci&oacute;n aplicada a procesos operativos.</span></li>
+                                <li><strong>Valor de negocio</strong><span>Mejor soporte para seguimiento, organizaci&oacute;n del proceso y toma de decisiones.</span></li>
+                            </ul>
+                            <a class="project-link" href="#contact">Conversar sobre este proyecto</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-media">
+                            <div class="project-visual project-visual-ops">
+                                <span class="project-visual-label">OPS</span>
+                                <strong>Linux, redes y soporte t&eacute;cnico</strong>
+                                <p>Configuraci&oacute;n, conectividad y resoluci&oacute;n de incidencias en entornos reales.</p>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-kicker">Experiencia aplicada</span>
+                            <h3>Implementaci&oacute;n t&eacute;cnica y soporte en entornos Linux</h3>
+                            <p>
+                                Experiencia pr&aacute;ctica con Ubuntu, servidores, redes, configuraci&oacute;n t&eacute;cnica,
+                                conexi&oacute;n entre sistemas y troubleshooting para sostener operaciones donde el
+                                software debe mantenerse estable y funcional.
+                            </p>
+                            <ul class="project-meta">
+                                <li><strong>Problema</strong><span>Puesta en operaci&oacute;n, conectividad y continuidad de entornos t&eacute;cnicos.</span></li>
+                                <li><strong>Aporte t&eacute;cnico</strong><span>Configuraci&oacute;n, soporte, conexi&oacute;n entre sistemas y resoluci&oacute;n de problemas.</span></li>
+                                <li><strong>Valor de negocio</strong><span>Apoyo a equipos que necesitan estabilidad operativa, respuesta t&eacute;cnica y capacidad de adaptaci&oacute;n.</span></li>
+                            </ul>
+                            <a class="project-link" href="#contact">Solicitar conversaci&oacute;n t&eacute;cnica</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust section-anchor section-block" id="infrastructure">
+            <div class="container trust-layout">
+                <div class="section-intro reveal">
+                    <span class="section-label">Infraestructura e integraci&oacute;n</span>
+                    <h2>Base t&eacute;cnica &uacute;til para roles donde se requiere implementaci&oacute;n, despliegue, soporte avanzado, integraci&oacute;n de herramientas y acompa&ntilde;amiento t&eacute;cnico en procesos de cambio.</h2>
+                </div>
+
+                <div class="trust-grid">
+                    <article class="trust-card reveal">
+                        <h3>Implementaci&oacute;n y despliegue</h3>
+                        <p>Experiencia pr&aacute;ctica desplegando y configurando soluciones en Linux, con foco en que el sistema quede operativo, conectado y usable.</p>
+                    </article>
+                    <article class="trust-card reveal">
+                        <h3>Ubuntu, servidores y redes</h3>
+                        <p>Trabajo t&eacute;cnico relacionado con Ubuntu, servidores, redes y conexi&oacute;n entre componentes para sostener operaciones reales.</p>
+                    </article>
+                    <article class="trust-card reveal">
+                        <h3>Soporte t&eacute;cnico y troubleshooting</h3>
+                        <p>Enfoque pr&aacute;ctico para detectar, resolver y acompa&ntilde;ar incidencias que impactan la continuidad de la operaci&oacute;n.</p>
+                    </article>
+                    <article class="trust-card reveal">
+                        <h3>Automatizaci&oacute;n y plataformas</h3>
+                        <p>Perfil t&eacute;cnico con capacidad de adaptaci&oacute;n a CRM, automatizaci&oacute;n e integraciones entre herramientas, incluyendo entornos donde se usen plataformas como GoHighLevel.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section-anchor section-block section-muted" id="contact">
+            <div class="container contact-layout">
+                <div class="contact-copy reveal">
+                    <span class="section-label">Contacto</span>
+                    <h2>Disponible para colaborar en implementaci&oacute;n, soporte, automatizaci&oacute;n, integraci&oacute;n y soluciones t&eacute;cnicas orientadas a negocio.</h2>
+                    <p>
+                        Si tu equipo necesita un perfil con enfoque backend, comprensi&oacute;n operativa
+                        y capacidad para trabajar en despliegue, soporte, conexi&oacute;n entre herramientas
+                        o mejora de procesos, podemos conversar.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:dbalpagro@gmail.com">dbalpagro@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/douglas-jose-brenes-lopez-2b8960136" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a href="https://wa.me/50586248396" target="_blank" rel="noreferrer">WhatsApp</a>
+                    </div>
+                </div>
+
+                <form
+                    class="contact-form reveal"
+                    id="contact-form"
+                    action="mailto:dbalpagro@gmail.com"
+                    method="post"
+                    enctype="text/plain"
+                >
+                    <label>
+                        <span>Nombre</span>
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="tu@email.com" required>
+                    </label>
+                    <label>
+                        <span>Idea o necesidad del proyecto</span>
+                        <textarea name="project_idea" rows="6" placeholder="Cu&eacute;ntame si necesitas implementaci&oacute;n, soporte, automatizaci&oacute;n o una soluci&oacute;n t&eacute;cnica." required></textarea>
+                    </label>
+                    <button class="button button-primary" type="submit">Iniciar conversaci&oacute;n</button>
+                    <p class="form-note">El formulario abre tu cliente de correo predeterminado. Tambi&eacute;n puedes escribirme directo por email o WhatsApp.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-shell">
+            <div class="footer-copy">
+                <strong>Douglas Brenes</strong>
+                <span>Software Engineer | Backend &amp; Business Systems</span>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:dbalpagro@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/douglas-jose-brenes-lopez-2b8960136" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://wa.me/50586248396" target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Todos los derechos reservados.</p>
         </div>
-    </section>
+    </footer>
 
-    <section id="experiencia-laboral">
-        <div class="container">
-            <h2>Experiencia Laboral / Trabajos</h2>
-            <div class="portfolio-grid">
-                <!-- Proyecto 1 del Portafolio -->
-                <div class="portfolio-item">
-                    <img src="img/IMG-20161115-WA0000.jpg" alt="Proyecto 1">
-                    <h3>Festival Canino y Felino 2016</h3>
-                    <p>Coordinador de festival canino y felino 2016 en coordinacion con UNAN -CARAZO y Distribuidora Bendaña.</p>
-                    <a href="https://www.facebook.com/share/p/1BK1Lz66Q7/" target="_blank">Haz clic aquí</a>
-                </div>
-
-                <!-- Proyecto 2 del Portafolio -->
-                <div class="portfolio-item">
-                    <img src="img/20200114_075855.jpg" alt="Proyecto 2">
-                    <h3>Sistema de Facturacion Farmacia Santo Remedio</h3>
-                    <p>Instalacion, configuracion y soporte de sistema de facturacion para farmacia Santo Remedio.</p>
-                </div>
-
-                <!-- Proyecto 3 del Portafolio -->
-                <div class="portfolio-item">
-                    <img src="img/Yopresto.PNG" alt="Proyecto 3">
-                    <h3>Desarrollo de sistema de Prestamos</h3>
-                    <p>Desarrollo de pequeño sistema de control de prestamos desarrollado en Django con base de datos MySQL, Puesta en produccion sobre servidor de AWS.</p>
-                    <strong>En desarrollo de Proxima Actulizacion</strong>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="linea">
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Mi Experiencia Laboral</h2>
-    
-        <div class="timeline">
-            <!-- Timeline Item 1 -->
-            <div class="timeline-item">
-                <div class="row">
-                    <div class="col-md-2 text-center">
-                        <span class="timeline-year bg-primary text-white rounded-pill py-2 px-4">2021</span>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="timeline-content">
-                            <h4>Comienzo de mi carrera</h4>
-                            <p>Inicié mi primer trabajo en 2021 como <strong>desarrollador</strong> freelancer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Timeline Item 2 -->
-            <div class="timeline-item">
-                <div class="row">
-                    <div class="col-md-2 text-center">
-                        <span class="timeline-year bg-success text-white rounded-pill py-2 px-4">2018</span>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="timeline-content">
-                            <h4>Farmacia Santo Remedio</h4>
-                            <p>Inicie en 2018 <strong>Responzable de Tecnologia </strong> y fui el encargado de montar el sistema de inventario, control de stock y el sistema de ventas, Ademas de instalar y dar mantenimiento a todos los dispositivos tecnologicos como redes,computadoras, servidor y camaras de seguridad.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Timeline Item 3 -->
-            <div class="timeline-item">
-                <div class="row">
-                    <div class="col-md-2 text-center">
-                        <span class="timeline-year bg-warning text-dark rounded-pill py-2 px-4">2016</span>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="timeline-content">
-                            <h4>Distribuidora Bendaña</h4>
-                            <p>En 2016 comencé <strong>Responzable del Area de Ventas</strong> Me encargaba de liderar al equipo de ventas para llevar a cabo cada una de las actividades de multiplicarion y reportes de metas de ventas de cada linea.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Timeline Item 4 -->
-            <div class="timeline-item">
-                <div class="row">
-                    <div class="col-md-2 text-center">
-                        <span class="timeline-year bg-info text-white rounded-pill py-2 px-4">2020</span>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="timeline-content">
-                            <h4>Alpagro</h4>
-                            <p>En 2020 <strong>Responzable del Area de Proceso</strong> coordinaba la planta de procesamiento y cuartos frios ademas de supervisar a los operarios.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Timeline Item 5 -->
-            <div class="timeline-item">
-                <div class="row">
-                    <div class="col-md-2 text-center">
-                        <span class="timeline-year bg-danger text-white rounded-pill py-2 px-4">2015</span>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="timeline-content">
-                            <h4>Monisa - Avinsa</h4>
-                            <p>En 2015 me convertí en <strong>Jefe de Granja Santa Amalia</strong>, liderando equipos multidisciplinarios.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-<!-- Timeline Item 5 -->
-            <div class="timeline-item">
-                <div class="row">
-                    <div class="col-md-2 text-center">
-                        <span class="timeline-year bg-danger text-white rounded-pill py-2 px-4">2012</span>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="timeline-content">
-                            <h4>RS Seguridad Digital</h4>
-                            <p>En 2012 me convertí en <strong>Tecnico Seguridad Electronica</strong>, Tecnico en instalacion y reparacion de sistemas de seguridad.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Timeline Item 6 -->
-            <div class="timeline-item">
-                <div class="row">
-                    <div class="col-md-2 text-center">
-                        <span class="timeline-year bg-danger text-white rounded-pill py-2 px-4">2010</span>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="timeline-content">
-                            <h4>Walmart Pali Masatepe</h4>
-                            <p>En 2010 me convertí en <strong>Cajero</strong>, En pali Masatepe encargado de realizar transacciones de compra de los clientes y realizar el llendo de gondolas y cambios de precios, actulizacion de invertario de los productos en el sistema.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-    
-    </div>
-</section>
-
-<div class="contact-section">
-    <h2>Contacta conmigo</h2>
-    <p>¡Conéctate conmigo en mis redes sociales y LinkedIn!</p>
-    <ul class="social-links">
-        <li><a href="https://www.linkedin.com/in/douglas-jose-brenes-lopez-2b8960136" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://wa.me/86248396" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-        <li><a href="mailto:dbalpagro@gmail.com" class="email"><i class="fas fa-envelope"></i></a></li>
-        <li><a href="https://www.facebook.com/Douglas Brenes" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a></li>
-    </ul>
-</div>
-
-    <!-- Incluye Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-    <script src="script/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

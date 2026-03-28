@@ -1,0 +1,430 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+/* Estilo para el navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease-out;
+  backdrop-filter: blur(8px) brightness(1.2); /* Desenfoque y ajuste de brillo */
+  -webkit-backdrop-filter: blur(8px) brightness(1.2); /* Soporte para Safari */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 16px;
+  z-index: 9999; /* Asegura que el navbar esté encima del contenido */
+}
+
+/* Estilo para el logo dentro del navbar */
+nav .navbar-brand h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Enlaces del navbar */
+nav .navbar-nav .nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en los enlaces */
+nav .navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo para el botón de toggler en dispositivos móviles */
+.navbar-toggler {
+  border: none;
+}
+
+/* Hacer que el navbar sea más grande en pantallas grandes */
+@media (min-width: 640px) {
+  nav {
+    padding: 16px 50px;
+  }
+  .navbar-nav {
+    display: flex;
+  }
+}
+
+/* Máscara degradada en el fondo del navbar */
+nav.mask {
+  top: 150px;
+  mask-image: linear-gradient(black 70%, transparent);
+  -webkit-mask-image: linear-gradient(black 70%, transparent);
+}
+
+/* Máscara con un patrón específico */
+nav.mask-pattern {
+  top: 300px;
+  mask-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org%2F2000%2Fsvg%27 viewBox=%270 0 12.21 10.57%27%3E%3Cpath fill=%27%23ffffff%27 d=%27M6.1 0h6.11L9.16 5.29 6.1 10.57 3.05 5.29 0 0h6.1z%27/%3E%3C/svg%3E"), linear-gradient(black calc(100% - 30px), transparent calc(100% - 30px));
+  mask-size: auto 30px, 100% 100%;
+  mask-repeat: repeat-x, no-repeat;
+  mask-position: left bottom, top left;
+  -webkit-mask-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org%2F2000%2Fsvg%27 viewBox=%270 0 12.21 10.57%27%3E%3Cpath fill=%27%23ffffff%27 d=%27M6.1 0h6.11L9.16 5.29 6.1 10.57 3.05 5.29 0 0h6.1z%27/%3E%3C/svg%3E"), linear-gradient(black calc(100% - 30px), transparent calc(100% - 30px));
+  -webkit-mask-size: auto 30px, 100% 100%;
+  -webkit-mask-repeat: repeat-x, no-repeat;
+  -webkit-mask-position: left bottom, top left;
+}
+
+/* Estilo para enlaces de texto */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* Ajuste de visibilidad para menú en pantallas más grandes */
+.list {
+  list-style-type: none;
+  margin-left: auto;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .list {
+    display: flex;
+  }
+}
+
+.list li {
+  margin-left: 20px;
+}
+
+
+.menu {
+  display: inline-block;
+  padding: 0;
+  font-size: 0;
+  background: none;
+  border: none;
+  margin-left: 20px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.menu::before {
+  content: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2024.8%2018.92%27%20width=%2724.8%27%20height=%2718.92%27%3E%3Cpath%20d=%27M23.8,9.46H1m22.8,8.46H1M23.8,1H1%27%20fill=%27none%27%20stroke=%27%23fff%27%20stroke-linecap=%27round%27%20stroke-width=%272%27%2F%3E%3C%2Fsvg%3E");
+}
+
+@media (min-width: 640px) {
+  .menu {
+    display: none;
+  }
+}
+
+
+/* Hero */
+#about {
+  background-color: #f9f9f9;
+  padding: 70px 20px;
+  text-align: center;
+}
+.container {
+
+    JUSTIFY-ITEMS: CENTER;
+
+}
+.containerImg {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  border-top: 4px solid #d400ff;
+  border-bottom: 4px solid #ff00aa;
+  animation: rotate 4s linear infinite;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.inner-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Secciones */
+section {
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.profile-img {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  border: 3px solid #3498db;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Certificaciones */
+#projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.certifications-image img {
+  width: 100%;  
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+/* Portafolio */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.portfolio-item p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Timeline */
+.timeline-item {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-item img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.timeline-item h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.timeline-item p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.timeline-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 8px;
+  height: 100%;
+  background-color: #4CAF50;
+  transform: translateX(-5107%);
+}
+
+.timeline-item:nth-child(odd):before {
+  background-color: #2196F3;
+}
+
+/* Animación al hacer scroll */
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 4px solid #4CAF50;
+  border-radius: 50%;
+  transform: translateX(-2578%);
+}
+
+.timeline-item:nth-child(odd):after {
+  border-color: #2196F3;
+}
+/* Contacto */
+.contact-section {
+  background-color: #ffffff;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #555;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0077b5; /* Color al pasar el cursor (puedes cambiarlo) */
+  transform: translateY(-5px); /* Efecto de elevación */
+}
+
+/* Añadir color específico para cada red social */
+.social-links a.linkedin:hover {
+  color: #0077b5;
+}
+
+.social-links a.twitter:hover {
+  color: #1da1f2;
+}
+
+.social-links a.instagram:hover {
+  color: #e1306c;
+}
+
+.social-links a.facebook:hover {
+  color: #1877f2;
+}
+
+.img-hover {
+  transition: transform 0.3s ease;
+}
+.img-hover:hover {
+  transform: scale(1.05);
+}
